@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'polls.apps.PollsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -77,7 +78,7 @@ DATABASES = {
         "default": {
         "ENGINE": "django.db.backends.postgresql",
         "OPTIONS": {
-            "service": "my_service",
+            "service": "py_django_tutorial_service",
             "passfile": ".my_pgpass",
         },
     }
